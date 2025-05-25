@@ -1,4 +1,4 @@
-# No-Three-in-Line Problem: New 75-Point Record for n=47
+# No-Three-in-Line Problem: New 75-Point Record for n=47 since 1975
 
 ![Figure 1](Figure_1.png)
 
