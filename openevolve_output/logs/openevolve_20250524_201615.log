@@ -1,0 +1,16 @@
+2025-05-24 20:16:15,646 - openevolve.controller - INFO - Logging to no_three_in_line/openevolve_output/logs/openevolve_20250524_201615.log
+2025-05-24 20:16:15,705 - openevolve.llm.openai - INFO - Initialized OpenAI LLM with model: google/gemini-2.0-flash-001
+2025-05-24 20:16:15,746 - openevolve.llm.openai - INFO - Initialized OpenAI LLM with model: openai/o4-mini-high
+2025-05-24 20:16:15,747 - openevolve.llm.ensemble - INFO - Initialized LLM ensemble with models: google/gemini-2.0-flash-001 (weight: 0.70), openai/o4-mini-high (weight: 0.30)
+2025-05-24 20:16:15,747 - openevolve.prompt.sampler - INFO - Initialized prompt sampler
+2025-05-24 20:16:15,747 - openevolve.database - INFO - Initialized program database with 0 programs
+2025-05-24 20:16:15,748 - openevolve.evaluator - INFO - Successfully loaded evaluation function from no_three_in_line/evaluator.py
+2025-05-24 20:16:15,748 - openevolve.evaluator - INFO - Initialized evaluator with no_three_in_line/evaluator.py
+2025-05-24 20:16:15,748 - openevolve.controller - INFO - Initialized OpenEvolve with no_three_in_line/initial_program.py and no_three_in_line/evaluator.py
+2025-05-24 20:16:15,748 - openevolve.controller - INFO - Adding initial program to database
+2025-05-24 20:16:15,907 - openevolve.evaluator - INFO - Evaluated program 0e1e84d5-c5e2-456e-a63c-60d217698f4e in 0.16s: point_count=69.0000, overall_score=69.0000, runtime=0.1572, valid_solution=1.0000
+2025-05-24 20:16:15,907 - openevolve.controller - INFO - Starting evolution from iteration 0 for 50 iterations (total: 50)
+2025-05-24 20:16:16,540 - httpx - INFO - HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2025-05-24 20:16:18,464 - openevolve.evaluator - INFO - Evaluated program cbd93914-8717-4016-a8ae-a43813e1da85 in 0.18s: point_count=67.0000, overall_score=67.0000, runtime=0.1779, valid_solution=1.0000
+2025-05-24 20:16:18,465 - openevolve.controller - INFO - Iteration 1: Child cbd93914-8717-4016-a8ae-a43813e1da85 from parent 0e1e84d5-c5e2-456e-a63c-60d217698f4e in 2.56s. Metrics: point_count=67.0000, overall_score=67.0000, runtime=0.1779, valid_solution=1.0000 (Δ: point_count=-2.0000, overall_score=-2.0000, runtime=+0.0207, valid_solution=+0.0000)
+2025-05-24 20:16:28,564 - httpx - INFO - HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"

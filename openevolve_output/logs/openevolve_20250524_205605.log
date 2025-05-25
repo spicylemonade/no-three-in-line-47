@@ -1,0 +1,19 @@
+2025-05-24 20:56:05,753 - openevolve.controller - INFO - Logging to no_three_in_line/openevolve_output/logs/openevolve_20250524_205605.log
+2025-05-24 20:56:05,812 - openevolve.llm.openai - INFO - Initialized OpenAI LLM with model: google/gemini-2.0-flash-001
+2025-05-24 20:56:05,853 - openevolve.llm.openai - INFO - Initialized OpenAI LLM with model: openai/o4-mini-high
+2025-05-24 20:56:05,853 - openevolve.llm.ensemble - INFO - Initialized LLM ensemble with models: google/gemini-2.0-flash-001 (weight: 0.70), openai/o4-mini-high (weight: 0.30)
+2025-05-24 20:56:05,853 - openevolve.prompt.sampler - INFO - Initialized prompt sampler
+2025-05-24 20:56:05,853 - openevolve.database - INFO - Initialized program database with 0 programs
+2025-05-24 20:56:05,854 - openevolve.evaluator - INFO - Successfully loaded evaluation function from no_three_in_line/evaluator.py
+2025-05-24 20:56:05,854 - openevolve.evaluator - INFO - Initialized evaluator with no_three_in_line/evaluator.py
+2025-05-24 20:56:05,854 - openevolve.controller - INFO - Initialized OpenEvolve with no_three_in_line/initial_program.py and no_three_in_line/evaluator.py
+2025-05-24 20:56:05,854 - openevolve.database - INFO - Loaded database metadata with last_iteration=30
+2025-05-24 20:56:05,855 - openevolve.database - INFO - Loaded database with 21 programs from no_three_in_line/openevolve_output/checkpoints/checkpoint_30
+2025-05-24 20:56:05,855 - openevolve.controller - INFO - Skipping initial program addition (resuming from iteration 30 with 21 existing programs)
+2025-05-24 20:56:05,855 - openevolve.controller - INFO - Starting evolution from iteration 30 for 1 iterations (total: 31)
+2025-05-24 20:56:06,618 - httpx - INFO - HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2025-05-24 20:56:10,269 - openevolve.evaluator - INFO - Evaluated program 5f7333f4-eb8a-4fcd-8299-81bd7fd6917c in 0.29s: point_count=67.0000, overall_score=67.0000, runtime=0.2815, valid_solution=1.0000
+2025-05-24 20:56:10,269 - openevolve.controller - INFO - Iteration 31: Child 5f7333f4-eb8a-4fcd-8299-81bd7fd6917c from parent fc82babe-2f92-4846-bec9-8e06608caa24 in 4.41s. Metrics: point_count=67.0000, overall_score=67.0000, runtime=0.2815, valid_solution=1.0000 (Δ: point_count=-3.0000, overall_score=-3.0000, runtime=+0.0392, valid_solution=+0.0000)
+2025-05-24 20:56:10,269 - openevolve.controller - INFO - Using tracked best program: 07d4e28e-a81a-4a95-bd67-5726bb88953e
+2025-05-24 20:56:10,269 - openevolve.controller - INFO - Evolution complete. Best program has metrics: point_count=72.0000, overall_score=72.0000, runtime=0.1727, valid_solution=1.0000
+2025-05-24 20:56:10,270 - openevolve.controller - INFO - Saved best program to no_three_in_line/openevolve_output/best/best_program.py with program info to no_three_in_line/openevolve_output/best/best_program_info.json

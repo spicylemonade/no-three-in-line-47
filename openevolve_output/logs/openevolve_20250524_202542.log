@@ -1,0 +1,48 @@
+2025-05-24 20:25:42,959 - openevolve.controller - INFO - Logging to no_three_in_line/openevolve_output/logs/openevolve_20250524_202542.log
+2025-05-24 20:25:43,035 - openevolve.llm.openai - INFO - Initialized OpenAI LLM with model: google/gemini-2.0-flash-001
+2025-05-24 20:25:43,076 - openevolve.llm.openai - INFO - Initialized OpenAI LLM with model: openai/o4-mini-high
+2025-05-24 20:25:43,076 - openevolve.llm.ensemble - INFO - Initialized LLM ensemble with models: google/gemini-2.0-flash-001 (weight: 0.70), openai/o4-mini-high (weight: 0.30)
+2025-05-24 20:25:43,076 - openevolve.prompt.sampler - INFO - Initialized prompt sampler
+2025-05-24 20:25:43,076 - openevolve.database - INFO - Initialized program database with 0 programs
+2025-05-24 20:25:43,077 - openevolve.evaluator - INFO - Successfully loaded evaluation function from no_three_in_line/evaluator.py
+2025-05-24 20:25:43,077 - openevolve.evaluator - INFO - Initialized evaluator with no_three_in_line/evaluator.py
+2025-05-24 20:25:43,077 - openevolve.controller - INFO - Initialized OpenEvolve with no_three_in_line/initial_program.py and no_three_in_line/evaluator.py
+2025-05-24 20:25:43,077 - openevolve.controller - INFO - Adding initial program to database
+2025-05-24 20:25:43,227 - openevolve.evaluator - INFO - Evaluated program 447f70a1-5ce4-43e6-b631-043cf4941eed in 0.15s: point_count=68.0000, overall_score=68.0000, runtime=0.1478, valid_solution=1.0000
+2025-05-24 20:25:43,227 - openevolve.controller - INFO - Starting evolution from iteration 0 for 10 iterations (total: 10)
+2025-05-24 20:25:43,885 - httpx - INFO - HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2025-05-24 20:25:45,516 - openevolve.evaluator - INFO - Evaluated program 45a09ecb-614f-4379-926c-9cef09429fd6 in 0.01s: point_count=47.0000, overall_score=47.0000, runtime=0.0046, valid_solution=1.0000
+2025-05-24 20:25:45,516 - openevolve.controller - INFO - Iteration 1: Child 45a09ecb-614f-4379-926c-9cef09429fd6 from parent 447f70a1-5ce4-43e6-b631-043cf4941eed in 2.29s. Metrics: point_count=47.0000, overall_score=47.0000, runtime=0.0046, valid_solution=1.0000 (Δ: point_count=-21.0000, overall_score=-21.0000, runtime=-0.1432, valid_solution=+0.0000)
+2025-05-24 20:25:45,867 - httpx - INFO - HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2025-05-24 20:25:47,388 - openevolve.evaluator - INFO - Evaluated program 07d4e28e-a81a-4a95-bd67-5726bb88953e in 0.17s: point_count=72.0000, overall_score=72.0000, runtime=0.1727, valid_solution=1.0000
+2025-05-24 20:25:47,388 - openevolve.database - INFO - New best program 07d4e28e-a81a-4a95-bd67-5726bb88953e replaces 447f70a1-5ce4-43e6-b631-043cf4941eed
+2025-05-24 20:25:47,388 - openevolve.controller - INFO - Iteration 2: Child 07d4e28e-a81a-4a95-bd67-5726bb88953e from parent 447f70a1-5ce4-43e6-b631-043cf4941eed in 1.87s. Metrics: point_count=72.0000, overall_score=72.0000, runtime=0.1727, valid_solution=1.0000 (Δ: point_count=+4.0000, overall_score=+4.0000, runtime=+0.0248, valid_solution=+0.0000)
+2025-05-24 20:25:47,388 - openevolve.controller - INFO - 🌟 New best solution found at iteration 2: 07d4e28e-a81a-4a95-bd67-5726bb88953e
+2025-05-24 20:25:47,388 - openevolve.controller - INFO - Metrics: point_count=72.0000, overall_score=72.0000, runtime=0.1727, valid_solution=1.0000
+2025-05-24 20:25:47,867 - httpx - INFO - HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2025-05-24 20:25:50,078 - openevolve.evaluator - INFO - Evaluated program fc82babe-2f92-4846-bec9-8e06608caa24 in 0.25s: point_count=70.0000, overall_score=70.0000, runtime=0.2424, valid_solution=1.0000
+2025-05-24 20:25:50,078 - openevolve.controller - INFO - Iteration 3: Child fc82babe-2f92-4846-bec9-8e06608caa24 from parent 07d4e28e-a81a-4a95-bd67-5726bb88953e in 2.69s. Metrics: point_count=70.0000, overall_score=70.0000, runtime=0.2424, valid_solution=1.0000 (Δ: point_count=-2.0000, overall_score=-2.0000, runtime=+0.0697, valid_solution=+0.0000)
+2025-05-24 20:25:50,659 - httpx - INFO - HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2025-05-24 20:25:53,641 - openevolve.evaluator - INFO - Evaluated program 117f950c-7847-4849-a67f-c9e7e3f32ad9 in 0.17s: point_count=72.0000, overall_score=72.0000, runtime=0.1694, valid_solution=1.0000
+2025-05-24 20:25:53,641 - openevolve.controller - INFO - Iteration 4: Child 117f950c-7847-4849-a67f-c9e7e3f32ad9 from parent fc82babe-2f92-4846-bec9-8e06608caa24 in 3.56s. Metrics: point_count=72.0000, overall_score=72.0000, runtime=0.1694, valid_solution=1.0000 (Δ: point_count=+2.0000, overall_score=+2.0000, runtime=-0.0729, valid_solution=+0.0000)
+2025-05-24 20:26:03,845 - httpx - INFO - HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2025-05-24 20:26:18,757 - openevolve.controller - WARNING - Iteration 5: No valid diffs found in response
+2025-05-24 20:26:28,834 - httpx - INFO - HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2025-05-24 20:26:36,401 - openevolve.controller - WARNING - Iteration 6: No valid diffs found in response
+2025-05-24 20:26:36,900 - httpx - INFO - HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2025-05-24 20:26:39,769 - openevolve.evaluator - INFO - Evaluated program 136f59ad-5509-4d60-b4b8-8d26676e77a6 in 0.18s: point_count=71.0000, overall_score=71.0000, runtime=0.1728, valid_solution=1.0000
+2025-05-24 20:26:39,769 - openevolve.controller - INFO - Iteration 7: Child 136f59ad-5509-4d60-b4b8-8d26676e77a6 from parent 447f70a1-5ce4-43e6-b631-043cf4941eed in 3.37s. Metrics: point_count=71.0000, overall_score=71.0000, runtime=0.1728, valid_solution=1.0000 (Δ: point_count=+3.0000, overall_score=+3.0000, runtime=+0.0250, valid_solution=+0.0000)
+2025-05-24 20:26:40,333 - httpx - INFO - HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2025-05-24 20:26:43,838 - openevolve.evaluator - INFO - Evaluated program 37cfb4e8-77ad-4e63-b548-abd7186f23aa in 0.15s: point_count=68.0000, overall_score=68.0000, runtime=0.1476, valid_solution=1.0000
+2025-05-24 20:26:43,838 - openevolve.controller - INFO - Iteration 8: Child 37cfb4e8-77ad-4e63-b548-abd7186f23aa from parent 447f70a1-5ce4-43e6-b631-043cf4941eed in 4.07s. Metrics: point_count=68.0000, overall_score=68.0000, runtime=0.1476, valid_solution=1.0000 (Δ: point_count=+0.0000, overall_score=+0.0000, runtime=-0.0003, valid_solution=+0.0000)
+2025-05-24 20:26:53,931 - httpx - INFO - HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2025-05-24 20:27:01,678 - openevolve.controller - WARNING - Iteration 9: No valid diffs found in response
+2025-05-24 20:27:02,287 - httpx - INFO - HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2025-05-24 20:27:06,325 - openevolve.evaluator - INFO - Evaluated program d6893649-e32c-45d9-a1ae-8c6abfb6dc44 in 0.16s: point_count=72.0000, overall_score=72.0000, runtime=0.1549, valid_solution=1.0000
+2025-05-24 20:27:06,326 - openevolve.controller - INFO - Iteration 10: Child d6893649-e32c-45d9-a1ae-8c6abfb6dc44 from parent 447f70a1-5ce4-43e6-b631-043cf4941eed in 4.65s. Metrics: point_count=72.0000, overall_score=72.0000, runtime=0.1549, valid_solution=1.0000 (Δ: point_count=+4.0000, overall_score=+4.0000, runtime=+0.0071, valid_solution=+0.0000)
+2025-05-24 20:27:06,327 - openevolve.database - INFO - Saved database with 8 programs to no_three_in_line/openevolve_output/checkpoints/checkpoint_10
+2025-05-24 20:27:06,327 - openevolve.controller - INFO - Saved best program at checkpoint 10 with metrics: point_count=72.0000, overall_score=72.0000, runtime=0.1727, valid_solution=1.0000
+2025-05-24 20:27:06,327 - openevolve.controller - INFO - Saved checkpoint at iteration 10 to no_three_in_line/openevolve_output/checkpoints/checkpoint_10
+2025-05-24 20:27:06,328 - openevolve.controller - INFO - Using tracked best program: 07d4e28e-a81a-4a95-bd67-5726bb88953e
+2025-05-24 20:27:06,328 - openevolve.controller - INFO - Evolution complete. Best program has metrics: point_count=72.0000, overall_score=72.0000, runtime=0.1727, valid_solution=1.0000
+2025-05-24 20:27:06,328 - openevolve.controller - INFO - Saved best program to no_three_in_line/openevolve_output/best/best_program.py with program info to no_three_in_line/openevolve_output/best/best_program_info.json

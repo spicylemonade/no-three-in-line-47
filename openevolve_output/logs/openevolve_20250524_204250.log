@@ -1,0 +1,156 @@
+2025-05-24 20:42:50,388 - openevolve.controller - INFO - Logging to no_three_in_line/openevolve_output/logs/openevolve_20250524_204250.log
+2025-05-24 20:42:50,450 - openevolve.llm.openai - INFO - Initialized OpenAI LLM with model: google/gemini-2.0-flash-001
+2025-05-24 20:42:50,495 - openevolve.llm.openai - INFO - Initialized OpenAI LLM with model: openai/o4-mini-high
+2025-05-24 20:42:50,495 - openevolve.llm.ensemble - INFO - Initialized LLM ensemble with models: google/gemini-2.0-flash-001 (weight: 0.70), openai/o4-mini-high (weight: 0.30)
+2025-05-24 20:42:50,495 - openevolve.prompt.sampler - INFO - Initialized prompt sampler
+2025-05-24 20:42:50,495 - openevolve.database - INFO - Initialized program database with 0 programs
+2025-05-24 20:42:50,495 - openevolve.evaluator - INFO - Successfully loaded evaluation function from no_three_in_line/evaluator.py
+2025-05-24 20:42:50,495 - openevolve.evaluator - INFO - Initialized evaluator with no_three_in_line/evaluator.py
+2025-05-24 20:42:50,496 - openevolve.controller - INFO - Initialized OpenEvolve with no_three_in_line/initial_program.py and no_three_in_line/evaluator.py
+2025-05-24 20:42:50,496 - openevolve.database - INFO - Loaded database metadata with last_iteration=10
+2025-05-24 20:42:50,496 - openevolve.database - INFO - Loaded database with 8 programs from no_three_in_line/openevolve_output/checkpoints/checkpoint_10
+2025-05-24 20:42:50,496 - openevolve.controller - INFO - Skipping initial program addition (resuming from iteration 10 with 8 existing programs)
+2025-05-24 20:42:50,496 - openevolve.controller - INFO - Starting evolution from iteration 10 for 50 iterations (total: 60)
+2025-05-24 20:42:51,251 - httpx - INFO - HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2025-05-24 20:42:54,873 - openevolve.evaluator - INFO - Evaluated program 68c8aaba-1d7b-4bcf-aef9-99a4993889f3 in 0.38s: point_count=70.0000, overall_score=70.0000, runtime=0.3830, valid_solution=1.0000
+2025-05-24 20:42:54,873 - openevolve.controller - INFO - Iteration 11: Child 68c8aaba-1d7b-4bcf-aef9-99a4993889f3 from parent fc82babe-2f92-4846-bec9-8e06608caa24 in 4.38s. Metrics: point_count=70.0000, overall_score=70.0000, runtime=0.3830, valid_solution=1.0000 (Δ: point_count=+0.0000, overall_score=+0.0000, runtime=+0.1407, valid_solution=+0.0000)
+2025-05-24 20:42:55,508 - httpx - INFO - HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2025-05-24 20:43:00,926 - openevolve.evaluator - INFO - Evaluated program f3639b90-b264-4709-a1e4-4ec3f052e218 in 0.15s: point_count=68.0000, overall_score=68.0000, runtime=0.1506, valid_solution=1.0000
+2025-05-24 20:43:00,926 - openevolve.controller - INFO - Iteration 12: Child f3639b90-b264-4709-a1e4-4ec3f052e218 from parent 447f70a1-5ce4-43e6-b631-043cf4941eed in 6.05s. Metrics: point_count=68.0000, overall_score=68.0000, runtime=0.1506, valid_solution=1.0000 (Δ: point_count=+0.0000, overall_score=+0.0000, runtime=+0.0028, valid_solution=+0.0000)
+2025-05-24 20:43:11,063 - httpx - INFO - HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2025-05-24 20:43:23,913 - openevolve.controller - WARNING - Iteration 13: No valid diffs found in response
+2025-05-24 20:43:33,998 - httpx - INFO - HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2025-05-24 20:43:43,372 - openevolve.controller - WARNING - Iteration 14: No valid diffs found in response
+2025-05-24 20:43:43,898 - httpx - INFO - HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2025-05-24 20:43:47,848 - openevolve.evaluator - INFO - Evaluated program 8aae50ea-1c7a-4541-887a-ff88e9b82b17 in 0.16s: point_count=69.0000, overall_score=69.0000, runtime=0.1590, valid_solution=1.0000
+2025-05-24 20:43:47,848 - openevolve.controller - INFO - Iteration 15: Child 8aae50ea-1c7a-4541-887a-ff88e9b82b17 from parent 07d4e28e-a81a-4a95-bd67-5726bb88953e in 4.48s. Metrics: point_count=69.0000, overall_score=69.0000, runtime=0.1590, valid_solution=1.0000 (Δ: point_count=-3.0000, overall_score=-3.0000, runtime=-0.0136, valid_solution=+0.0000)
+2025-05-24 20:43:48,328 - httpx - INFO - HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2025-05-24 20:43:50,207 - openevolve.evaluator - INFO - Evaluated program c9eaacce-e586-42c7-b2fb-cb9e00d14f65 in 0.05s: point_count=47.0000, overall_score=47.0000, runtime=0.0440, valid_solution=1.0000
+2025-05-24 20:43:50,208 - openevolve.controller - INFO - Iteration 16: Child c9eaacce-e586-42c7-b2fb-cb9e00d14f65 from parent 45a09ecb-614f-4379-926c-9cef09429fd6 in 2.36s. Metrics: point_count=47.0000, overall_score=47.0000, runtime=0.0440, valid_solution=1.0000 (Δ: point_count=+0.0000, overall_score=+0.0000, runtime=+0.0394, valid_solution=+0.0000)
+2025-05-24 20:43:50,691 - httpx - INFO - HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2025-05-24 20:43:52,031 - openevolve.evaluator - INFO - Evaluated program bcff8bfb-66a5-4601-89a7-daf08889df10 in 0.00s: point_count=47.0000, overall_score=0.0000, runtime=0.0013, valid_solution=0.0000
+2025-05-24 20:43:52,032 - openevolve.controller - INFO - Iteration 17: Child bcff8bfb-66a5-4601-89a7-daf08889df10 from parent 45a09ecb-614f-4379-926c-9cef09429fd6 in 1.82s. Metrics: point_count=47.0000, overall_score=0.0000, runtime=0.0013, valid_solution=0.0000 (Δ: point_count=+0.0000, overall_score=-47.0000, runtime=-0.0033, valid_solution=-1.0000)
+2025-05-24 20:43:52,516 - httpx - INFO - HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2025-05-24 20:43:55,524 - openevolve.evaluator - INFO - Evaluated program 8313313c-07c9-4f4b-acb9-a5fef54eb506 in 0.55s: point_count=68.0000, overall_score=68.0000, runtime=0.5471, valid_solution=1.0000
+2025-05-24 20:43:55,524 - openevolve.controller - INFO - Iteration 18: Child 8313313c-07c9-4f4b-acb9-a5fef54eb506 from parent 447f70a1-5ce4-43e6-b631-043cf4941eed in 3.49s. Metrics: point_count=68.0000, overall_score=68.0000, runtime=0.5471, valid_solution=1.0000 (Δ: point_count=+0.0000, overall_score=+0.0000, runtime=+0.3993, valid_solution=+0.0000)
+2025-05-24 20:44:05,652 - httpx - INFO - HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2025-05-24 20:44:16,919 - openevolve.controller - WARNING - Iteration 19: No valid diffs found in response
+2025-05-24 20:44:17,499 - httpx - INFO - HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2025-05-24 20:44:21,260 - openevolve.evaluator - INFO - Evaluated program 9b465583-2534-483a-ac6f-b041e31939f2 in 0.49s: point_count=71.0000, overall_score=71.0000, runtime=0.4891, valid_solution=1.0000
+2025-05-24 20:44:21,261 - openevolve.controller - INFO - Iteration 20: Child 9b465583-2534-483a-ac6f-b041e31939f2 from parent 68c8aaba-1d7b-4bcf-aef9-99a4993889f3 in 4.34s. Metrics: point_count=71.0000, overall_score=71.0000, runtime=0.4891, valid_solution=1.0000 (Δ: point_count=+1.0000, overall_score=+1.0000, runtime=+0.1061, valid_solution=+0.0000)
+2025-05-24 20:44:21,263 - openevolve.database - INFO - Saved database with 15 programs to no_three_in_line/openevolve_output/checkpoints/checkpoint_20
+2025-05-24 20:44:21,263 - openevolve.controller - INFO - Saved best program at checkpoint 20 with metrics: point_count=72.0000, overall_score=72.0000, runtime=0.1727, valid_solution=1.0000
+2025-05-24 20:44:21,263 - openevolve.controller - INFO - Saved checkpoint at iteration 20 to no_three_in_line/openevolve_output/checkpoints/checkpoint_20
+2025-05-24 20:44:21,656 - httpx - INFO - HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2025-05-24 20:44:23,775 - openevolve.evaluator - INFO - Evaluated program 86a14523-4a6b-4b16-bc97-470373dc9eac in 0.27s: point_count=76.0000, overall_score=0.0000, runtime=0.2706, valid_solution=0.0000
+2025-05-24 20:44:23,775 - openevolve.controller - INFO - Iteration 21: Child 86a14523-4a6b-4b16-bc97-470373dc9eac from parent bcff8bfb-66a5-4601-89a7-daf08889df10 in 2.51s. Metrics: point_count=76.0000, overall_score=0.0000, runtime=0.2706, valid_solution=0.0000 (Δ: point_count=+29.0000, overall_score=+0.0000, runtime=+0.2693, valid_solution=+0.0000)
+2025-05-24 20:44:24,469 - httpx - INFO - HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2025-05-24 20:44:27,396 - openevolve.evaluator - INFO - Evaluated program 840d37d4-6d87-4cfa-ac7e-92eb92704dd0 in 0.01s: point_count=47.0000, overall_score=47.0000, runtime=0.0087, valid_solution=1.0000
+2025-05-24 20:44:27,396 - openevolve.controller - INFO - Iteration 22: Child 840d37d4-6d87-4cfa-ac7e-92eb92704dd0 from parent 68c8aaba-1d7b-4bcf-aef9-99a4993889f3 in 3.62s. Metrics: point_count=47.0000, overall_score=47.0000, runtime=0.0087, valid_solution=1.0000 (Δ: point_count=-23.0000, overall_score=-23.0000, runtime=-0.3744, valid_solution=+0.0000)
+2025-05-24 20:44:27,960 - httpx - INFO - HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2025-05-24 20:44:32,072 - openevolve.evaluator - INFO - Evaluated program 2f59f7f4-5a8f-45e9-9120-0a4f4b7da9bb in 0.01s: point_count=2.0000, overall_score=2.0000, runtime=0.0038, valid_solution=1.0000
+2025-05-24 20:44:32,073 - openevolve.controller - INFO - Iteration 23: Child 2f59f7f4-5a8f-45e9-9120-0a4f4b7da9bb from parent c9eaacce-e586-42c7-b2fb-cb9e00d14f65 in 4.68s. Metrics: point_count=2.0000, overall_score=2.0000, runtime=0.0038, valid_solution=1.0000 (Δ: point_count=-45.0000, overall_score=-45.0000, runtime=-0.0402, valid_solution=+0.0000)
+2025-05-24 20:44:32,642 - httpx - INFO - HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2025-05-24 20:44:35,549 - openevolve.evaluator - INFO - Evaluated program 24105143-6cbf-41d5-b874-8060f5eaf00e in 0.03s: point_count=47.0000, overall_score=47.0000, runtime=0.0263, valid_solution=1.0000
+2025-05-24 20:44:35,550 - openevolve.controller - INFO - Iteration 24: Child 24105143-6cbf-41d5-b874-8060f5eaf00e from parent d6893649-e32c-45d9-a1ae-8c6abfb6dc44 in 3.48s. Metrics: point_count=47.0000, overall_score=47.0000, runtime=0.0263, valid_solution=1.0000 (Δ: point_count=-25.0000, overall_score=-25.0000, runtime=-0.1286, valid_solution=+0.0000)
+2025-05-24 20:44:35,971 - httpx - INFO - HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2025-05-24 20:44:39,137 - openevolve.evaluator - INFO - Evaluated program 5f5b8f12-6d6b-4e59-a691-d02f38cb7d86 in 0.18s: point_count=74.0000, overall_score=0.0000, runtime=0.1751, valid_solution=0.0000
+2025-05-24 20:44:39,138 - openevolve.controller - INFO - Iteration 25: Child 5f5b8f12-6d6b-4e59-a691-d02f38cb7d86 from parent 136f59ad-5509-4d60-b4b8-8d26676e77a6 in 3.59s. Metrics: point_count=74.0000, overall_score=0.0000, runtime=0.1751, valid_solution=0.0000 (Δ: point_count=+3.0000, overall_score=-71.0000, runtime=+0.0023, valid_solution=-1.0000)
+2025-05-24 20:44:49,235 - httpx - INFO - HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2025-05-24 20:45:06,655 - openevolve.controller - WARNING - Iteration 26: No valid diffs found in response
+2025-05-24 20:45:16,710 - httpx - INFO - HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2025-05-24 20:45:29,977 - openevolve.controller - WARNING - Iteration 27: No valid diffs found in response
+2025-05-24 20:45:40,114 - httpx - INFO - HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2025-05-24 20:45:50,590 - openevolve.controller - WARNING - Iteration 28: No valid diffs found in response
+2025-05-24 20:46:00,648 - httpx - INFO - HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2025-05-24 20:46:10,959 - openevolve.controller - WARNING - Iteration 29: No valid diffs found in response
+2025-05-24 20:46:11,666 - httpx - INFO - HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2025-05-24 20:46:18,655 - openevolve.evaluator - INFO - Evaluated program 2b964b7f-52e9-40eb-ac33-8a083b0bbdca in 0.03s: point_count=47.0000, overall_score=47.0000, runtime=0.0263, valid_solution=1.0000
+2025-05-24 20:46:18,656 - openevolve.controller - INFO - Iteration 30: Child 2b964b7f-52e9-40eb-ac33-8a083b0bbdca from parent 24105143-6cbf-41d5-b874-8060f5eaf00e in 7.70s. Metrics: point_count=47.0000, overall_score=47.0000, runtime=0.0263, valid_solution=1.0000 (Δ: point_count=+0.0000, overall_score=+0.0000, runtime=-0.0001, valid_solution=+0.0000)
+2025-05-24 20:46:18,668 - openevolve.database - INFO - Saved database with 21 programs to no_three_in_line/openevolve_output/checkpoints/checkpoint_30
+2025-05-24 20:46:18,669 - openevolve.controller - INFO - Saved best program at checkpoint 30 with metrics: point_count=72.0000, overall_score=72.0000, runtime=0.1727, valid_solution=1.0000
+2025-05-24 20:46:18,669 - openevolve.controller - INFO - Saved checkpoint at iteration 30 to no_three_in_line/openevolve_output/checkpoints/checkpoint_30
+2025-05-24 20:46:28,839 - httpx - INFO - HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2025-05-24 20:46:41,322 - openevolve.controller - WARNING - Iteration 31: No valid diffs found in response
+2025-05-24 20:46:51,398 - httpx - INFO - HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2025-05-24 20:47:01,831 - openevolve.controller - WARNING - Iteration 32: No valid diffs found in response
+2025-05-24 20:47:02,595 - httpx - INFO - HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2025-05-24 20:47:05,076 - openevolve.evaluator - INFO - Evaluated program a69ae184-416d-42f6-907d-ae762e930c41 in 0.21s: point_count=67.0000, overall_score=67.0000, runtime=0.2037, valid_solution=1.0000
+2025-05-24 20:47:05,076 - openevolve.controller - INFO - Iteration 33: Child a69ae184-416d-42f6-907d-ae762e930c41 from parent fc82babe-2f92-4846-bec9-8e06608caa24 in 3.24s. Metrics: point_count=67.0000, overall_score=67.0000, runtime=0.2037, valid_solution=1.0000 (Δ: point_count=-3.0000, overall_score=-3.0000, runtime=-0.0386, valid_solution=+0.0000)
+2025-05-24 20:47:05,528 - httpx - INFO - HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2025-05-24 20:47:10,568 - openevolve.evaluator - INFO - Evaluated program 7765d58d-dd77-4e8a-ba4f-ab9283ec248c in 0.15s: point_count=72.0000, overall_score=0.0000, runtime=0.1495, valid_solution=0.0000
+2025-05-24 20:47:10,568 - openevolve.controller - INFO - Iteration 34: Child 7765d58d-dd77-4e8a-ba4f-ab9283ec248c from parent 5f5b8f12-6d6b-4e59-a691-d02f38cb7d86 in 5.49s. Metrics: point_count=72.0000, overall_score=0.0000, runtime=0.1495, valid_solution=0.0000 (Δ: point_count=-2.0000, overall_score=+0.0000, runtime=-0.0256, valid_solution=+0.0000)
+2025-05-24 20:47:11,111 - httpx - INFO - HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2025-05-24 20:47:13,469 - openevolve.evaluator - INFO - Evaluated program 898ddefc-cedf-43cd-b9d3-dc615610b73f in 0.13s: point_count=65.0000, overall_score=65.0000, runtime=0.1249, valid_solution=1.0000
+2025-05-24 20:47:13,469 - openevolve.controller - INFO - Iteration 35: Child 898ddefc-cedf-43cd-b9d3-dc615610b73f from parent d6893649-e32c-45d9-a1ae-8c6abfb6dc44 in 2.90s. Metrics: point_count=65.0000, overall_score=65.0000, runtime=0.1249, valid_solution=1.0000 (Δ: point_count=-7.0000, overall_score=-7.0000, runtime=-0.0300, valid_solution=+0.0000)
+2025-05-24 20:47:13,994 - httpx - INFO - HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2025-05-24 20:47:15,839 - openevolve.evaluator - INFO - Evaluated program f2eda321-5b88-4904-8ffb-25591b8123f6 in 0.00s: point_count=92.0000, overall_score=0.0000, runtime=0.0012, valid_solution=0.0000
+2025-05-24 20:47:15,839 - openevolve.controller - INFO - Iteration 36: Child f2eda321-5b88-4904-8ffb-25591b8123f6 from parent 45a09ecb-614f-4379-926c-9cef09429fd6 in 2.37s. Metrics: point_count=92.0000, overall_score=0.0000, runtime=0.0012, valid_solution=0.0000 (Δ: point_count=+45.0000, overall_score=-47.0000, runtime=-0.0034, valid_solution=-1.0000)
+2025-05-24 20:47:25,962 - httpx - INFO - HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2025-05-24 20:47:36,654 - openevolve.controller - WARNING - Iteration 37: No valid diffs found in response
+2025-05-24 20:47:37,177 - httpx - INFO - HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2025-05-24 20:47:40,347 - openevolve.evaluator - INFO - Evaluated program e998da2f-e08b-478b-a95b-bd3714e35848 in 0.01s: point_count=47.0000, overall_score=47.0000, runtime=0.0043, valid_solution=1.0000
+2025-05-24 20:47:40,347 - openevolve.controller - INFO - Iteration 38: Child e998da2f-e08b-478b-a95b-bd3714e35848 from parent 24105143-6cbf-41d5-b874-8060f5eaf00e in 3.69s. Metrics: point_count=47.0000, overall_score=47.0000, runtime=0.0043, valid_solution=1.0000 (Δ: point_count=+0.0000, overall_score=+0.0000, runtime=-0.0220, valid_solution=+0.0000)
+2025-05-24 20:47:41,042 - httpx - INFO - HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2025-05-24 20:47:44,346 - openevolve.controller - WARNING - Iteration 39: No valid diffs found in response
+2025-05-24 20:47:54,426 - httpx - INFO - HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2025-05-24 20:48:02,318 - openevolve.controller - WARNING - Iteration 40: No valid diffs found in response
+2025-05-24 20:48:12,532 - httpx - INFO - HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2025-05-24 20:48:23,657 - openevolve.controller - WARNING - Iteration 41: No valid diffs found in response
+2025-05-24 20:48:24,170 - httpx - INFO - HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2025-05-24 20:48:26,733 - openevolve.evaluator - INFO - Evaluated program 6e4760ab-68b0-4a33-94c4-266afc95c8c3 in 0.13s: point_count=65.0000, overall_score=65.0000, runtime=0.1285, valid_solution=1.0000
+2025-05-24 20:48:26,734 - openevolve.controller - INFO - Iteration 42: Child 6e4760ab-68b0-4a33-94c4-266afc95c8c3 from parent f2eda321-5b88-4904-8ffb-25591b8123f6 in 3.08s. Metrics: point_count=65.0000, overall_score=65.0000, runtime=0.1285, valid_solution=1.0000 (Δ: point_count=-27.0000, overall_score=+65.0000, runtime=+0.1273, valid_solution=+1.0000)
+2025-05-24 20:48:27,264 - httpx - INFO - HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2025-05-24 20:48:31,874 - openevolve.evaluator - INFO - Evaluated program c29030f3-7189-4700-b7ae-2b2e728c295d in 0.01s: point_count=33.0000, overall_score=0.0000, runtime=0.0078, valid_solution=0.0000
+2025-05-24 20:48:31,874 - openevolve.controller - INFO - Iteration 43: Child c29030f3-7189-4700-b7ae-2b2e728c295d from parent 2f59f7f4-5a8f-45e9-9120-0a4f4b7da9bb in 5.14s. Metrics: point_count=33.0000, overall_score=0.0000, runtime=0.0078, valid_solution=0.0000 (Δ: point_count=+31.0000, overall_score=-2.0000, runtime=+0.0040, valid_solution=-1.0000)
+2025-05-24 20:48:32,342 - httpx - INFO - HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2025-05-24 20:48:36,866 - openevolve.evaluator - INFO - Evaluated program 3bef03fc-a986-47dc-bb1e-46c00dc35d61 in 0.23s: point_count=68.0000, overall_score=68.0000, runtime=0.2279, valid_solution=1.0000
+2025-05-24 20:48:36,867 - openevolve.controller - INFO - Iteration 44: Child 3bef03fc-a986-47dc-bb1e-46c00dc35d61 from parent fc82babe-2f92-4846-bec9-8e06608caa24 in 4.99s. Metrics: point_count=68.0000, overall_score=68.0000, runtime=0.2279, valid_solution=1.0000 (Δ: point_count=-2.0000, overall_score=-2.0000, runtime=-0.0144, valid_solution=+0.0000)
+2025-05-24 20:48:37,282 - httpx - INFO - HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2025-05-24 20:48:40,787 - openevolve.evaluator - INFO - Evaluated program 2a66d896-3620-4041-9a0b-076cd0e47737 in 0.00s: point_count=47.0000, overall_score=0.0000, runtime=0.0005, valid_solution=0.0000
+2025-05-24 20:48:40,787 - openevolve.controller - INFO - Iteration 45: Child 2a66d896-3620-4041-9a0b-076cd0e47737 from parent bcff8bfb-66a5-4601-89a7-daf08889df10 in 3.92s. Metrics: point_count=47.0000, overall_score=0.0000, runtime=0.0005, valid_solution=0.0000 (Δ: point_count=+0.0000, overall_score=+0.0000, runtime=-0.0009, valid_solution=+0.0000)
+2025-05-24 20:48:41,208 - httpx - INFO - HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2025-05-24 20:48:44,284 - openevolve.evaluator - INFO - Evaluated program 7ede9bbc-707c-483d-b2bc-4bd79da3c656 in 0.16s: point_count=69.0000, overall_score=69.0000, runtime=0.1620, valid_solution=1.0000
+2025-05-24 20:48:44,285 - openevolve.controller - INFO - Iteration 46: Child 7ede9bbc-707c-483d-b2bc-4bd79da3c656 from parent 447f70a1-5ce4-43e6-b631-043cf4941eed in 3.50s. Metrics: point_count=69.0000, overall_score=69.0000, runtime=0.1620, valid_solution=1.0000 (Δ: point_count=+1.0000, overall_score=+1.0000, runtime=+0.0142, valid_solution=+0.0000)
+2025-05-24 20:48:44,643 - httpx - INFO - HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2025-05-24 20:48:48,541 - openevolve.evaluator - INFO - Evaluated program fb329c48-e759-4882-8e26-f4d66a73897a in 0.02s: point_count=44.0000, overall_score=44.0000, runtime=0.0135, valid_solution=1.0000
+2025-05-24 20:48:48,541 - openevolve.controller - INFO - Iteration 47: Child fb329c48-e759-4882-8e26-f4d66a73897a from parent c29030f3-7189-4700-b7ae-2b2e728c295d in 4.26s. Metrics: point_count=44.0000, overall_score=44.0000, runtime=0.0135, valid_solution=1.0000 (Δ: point_count=+11.0000, overall_score=+44.0000, runtime=+0.0057, valid_solution=+1.0000)
+2025-05-24 20:48:58,642 - httpx - INFO - HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2025-05-24 20:49:13,479 - openevolve.controller - WARNING - Iteration 48: No valid diffs found in response
+2025-05-24 20:49:14,117 - httpx - INFO - HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2025-05-24 20:49:18,672 - openevolve.evaluator - INFO - Evaluated program 86a17e58-6d14-4e34-ae9c-c9a96eeb9da6 in 0.20s: point_count=510.0000, overall_score=0.0000, runtime=0.2005, valid_solution=0.0000
+2025-05-24 20:49:18,673 - openevolve.database - INFO - New best program 86a17e58-6d14-4e34-ae9c-c9a96eeb9da6 replaces 07d4e28e-a81a-4a95-bd67-5726bb88953e
+2025-05-24 20:49:18,673 - openevolve.controller - INFO - Iteration 49: Child 86a17e58-6d14-4e34-ae9c-c9a96eeb9da6 from parent 86a14523-4a6b-4b16-bc97-470373dc9eac in 5.19s. Metrics: point_count=510.0000, overall_score=0.0000, runtime=0.2005, valid_solution=0.0000 (Δ: point_count=+434.0000, overall_score=+0.0000, runtime=-0.0702, valid_solution=+0.0000)
+2025-05-24 20:49:18,673 - openevolve.controller - INFO - 🌟 New best solution found at iteration 49: 86a17e58-6d14-4e34-ae9c-c9a96eeb9da6
+2025-05-24 20:49:18,673 - openevolve.controller - INFO - Metrics: point_count=510.0000, overall_score=0.0000, runtime=0.2005, valid_solution=0.0000
+2025-05-24 20:49:28,770 - httpx - INFO - HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2025-05-24 20:49:39,854 - openevolve.controller - WARNING - Iteration 50: No valid diffs found in response
+2025-05-24 20:49:40,467 - httpx - INFO - HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2025-05-24 20:49:44,687 - openevolve.evaluator - INFO - Evaluated program 905b720e-0550-4a18-be65-11a30a076d6c in 0.02s: point_count=56.0000, overall_score=56.0000, runtime=0.0215, valid_solution=1.0000
+2025-05-24 20:49:44,688 - openevolve.controller - INFO - Iteration 51: Child 905b720e-0550-4a18-be65-11a30a076d6c from parent 24105143-6cbf-41d5-b874-8060f5eaf00e in 4.83s. Metrics: point_count=56.0000, overall_score=56.0000, runtime=0.0215, valid_solution=1.0000 (Δ: point_count=+9.0000, overall_score=+9.0000, runtime=-0.0048, valid_solution=+0.0000)
+2025-05-24 20:49:45,280 - httpx - INFO - HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2025-05-24 20:49:48,542 - openevolve.evaluator - INFO - Evaluated program 92446835-b44e-4a37-af75-10750a79ec74 in 0.01s: point_count=1.0000, overall_score=1.0000, runtime=0.0069, valid_solution=1.0000
+2025-05-24 20:49:48,543 - openevolve.controller - INFO - Iteration 52: Child 92446835-b44e-4a37-af75-10750a79ec74 from parent 9b465583-2534-483a-ac6f-b041e31939f2 in 3.86s. Metrics: point_count=1.0000, overall_score=1.0000, runtime=0.0069, valid_solution=1.0000 (Δ: point_count=-70.0000, overall_score=-70.0000, runtime=-0.4822, valid_solution=+0.0000)
+2025-05-24 20:49:49,004 - httpx - INFO - HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2025-05-24 20:49:52,407 - openevolve.evaluator - INFO - Evaluated program 2ce63d2a-760c-4677-a495-4f97dc2d7d15 in 0.02s: point_count=47.0000, overall_score=47.0000, runtime=0.0207, valid_solution=1.0000
+2025-05-24 20:49:52,408 - openevolve.controller - INFO - Iteration 53: Child 2ce63d2a-760c-4677-a495-4f97dc2d7d15 from parent 24105143-6cbf-41d5-b874-8060f5eaf00e in 3.86s. Metrics: point_count=47.0000, overall_score=47.0000, runtime=0.0207, valid_solution=1.0000 (Δ: point_count=+0.0000, overall_score=+0.0000, runtime=-0.0056, valid_solution=+0.0000)
+2025-05-24 20:49:52,812 - httpx - INFO - HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2025-05-24 20:49:55,509 - openevolve.evaluator - INFO - Evaluated program 6a531d75-f02e-46c9-ad23-c2f8d6f849a9 in 0.00s: point_count=47.0000, overall_score=47.0000, runtime=0.0039, valid_solution=1.0000
+2025-05-24 20:49:55,509 - openevolve.controller - INFO - Iteration 54: Child 6a531d75-f02e-46c9-ad23-c2f8d6f849a9 from parent 840d37d4-6d87-4cfa-ac7e-92eb92704dd0 in 3.10s. Metrics: point_count=47.0000, overall_score=47.0000, runtime=0.0039, valid_solution=1.0000 (Δ: point_count=+0.0000, overall_score=+0.0000, runtime=-0.0047, valid_solution=+0.0000)
+2025-05-24 20:50:05,619 - httpx - INFO - HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2025-05-24 20:50:13,336 - openevolve.controller - WARNING - Iteration 55: No valid diffs found in response
+2025-05-24 20:50:23,402 - httpx - INFO - HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2025-05-24 20:50:31,104 - openevolve.controller - WARNING - Iteration 56: No valid diffs found in response
+2025-05-24 20:50:31,690 - httpx - INFO - HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2025-05-24 20:50:35,518 - openevolve.evaluator - INFO - Evaluated program 11c1c0b1-5847-4c8d-ba62-d1a9be394081 in 0.24s: point_count=70.0000, overall_score=70.0000, runtime=0.2371, valid_solution=1.0000
+2025-05-24 20:50:35,519 - openevolve.controller - INFO - Iteration 57: Child 11c1c0b1-5847-4c8d-ba62-d1a9be394081 from parent fc82babe-2f92-4846-bec9-8e06608caa24 in 4.41s. Metrics: point_count=70.0000, overall_score=70.0000, runtime=0.2371, valid_solution=1.0000 (Δ: point_count=+0.0000, overall_score=+0.0000, runtime=-0.0053, valid_solution=+0.0000)
+2025-05-24 20:50:35,912 - httpx - INFO - HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2025-05-24 20:50:39,203 - openevolve.evaluator - INFO - Evaluated program 3a265d4d-0dd7-4213-9ffe-e90a005521ee in 0.03s: point_count=47.0000, overall_score=47.0000, runtime=0.0244, valid_solution=1.0000
+2025-05-24 20:50:39,204 - openevolve.controller - INFO - Iteration 58: Child 3a265d4d-0dd7-4213-9ffe-e90a005521ee from parent 2b964b7f-52e9-40eb-ac33-8a083b0bbdca in 3.68s. Metrics: point_count=47.0000, overall_score=47.0000, runtime=0.0244, valid_solution=1.0000 (Δ: point_count=+0.0000, overall_score=+0.0000, runtime=-0.0019, valid_solution=+0.0000)
+2025-05-24 20:50:49,322 - httpx - INFO - HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2025-05-24 20:50:56,422 - openevolve.controller - WARNING - Iteration 59: No valid diffs found in response
+2025-05-24 20:51:06,473 - httpx - INFO - HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2025-05-24 20:51:18,065 - openevolve.controller - WARNING - Iteration 60: No valid diffs found in response
+2025-05-24 20:51:18,065 - openevolve.controller - INFO - Using tracked best program: 86a17e58-6d14-4e34-ae9c-c9a96eeb9da6
+2025-05-24 20:51:18,066 - openevolve.controller - INFO - Evolution complete. Best program has metrics: point_count=510.0000, overall_score=0.0000, runtime=0.2005, valid_solution=0.0000
+2025-05-24 20:51:18,067 - openevolve.controller - INFO - Saved best program to no_three_in_line/openevolve_output/best/best_program.py with program info to no_three_in_line/openevolve_output/best/best_program_info.json

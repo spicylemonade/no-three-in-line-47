@@ -1,0 +1,22 @@
+2025-05-24 20:16:44,940 - openevolve.controller - INFO - Logging to no_three_in_line/openevolve_output/logs/openevolve_20250524_201644.log
+2025-05-24 20:16:44,997 - openevolve.llm.openai - INFO - Initialized OpenAI LLM with model: google/gemini-2.0-flash-001
+2025-05-24 20:16:45,035 - openevolve.llm.openai - INFO - Initialized OpenAI LLM with model: openai/o4-mini-high
+2025-05-24 20:16:45,035 - openevolve.llm.ensemble - INFO - Initialized LLM ensemble with models: google/gemini-2.0-flash-001 (weight: 0.70), openai/o4-mini-high (weight: 0.30)
+2025-05-24 20:16:45,035 - openevolve.prompt.sampler - INFO - Initialized prompt sampler
+2025-05-24 20:16:45,035 - openevolve.database - INFO - Initialized program database with 0 programs
+2025-05-24 20:16:45,036 - openevolve.evaluator - INFO - Successfully loaded evaluation function from no_three_in_line/evaluator.py
+2025-05-24 20:16:45,036 - openevolve.evaluator - INFO - Initialized evaluator with no_three_in_line/evaluator.py
+2025-05-24 20:16:45,036 - openevolve.controller - INFO - Initialized OpenEvolve with no_three_in_line/initial_program.py and no_three_in_line/evaluator.py
+2025-05-24 20:16:45,036 - openevolve.controller - INFO - Adding initial program to database
+2025-05-24 20:16:45,191 - openevolve.evaluator - INFO - Evaluated program 32533cee-89cf-4cb0-9c37-4c12c6d3b1a8 in 0.16s: point_count=67.0000, overall_score=67.0000, runtime=0.1539, valid_solution=1.0000
+2025-05-24 20:16:45,191 - openevolve.controller - INFO - Starting evolution from iteration 0 for 50 iterations (total: 50)
+2025-05-24 20:16:45,595 - httpx - INFO - HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2025-05-24 20:16:47,957 - openevolve.evaluator - INFO - Evaluated program eccdbe2f-f518-4deb-9723-a9795d880224 in 0.17s: point_count=67.0000, overall_score=67.0000, runtime=0.1730, valid_solution=1.0000
+2025-05-24 20:16:47,957 - openevolve.database - INFO - New best program eccdbe2f-f518-4deb-9723-a9795d880224 replaces 32533cee-89cf-4cb0-9c37-4c12c6d3b1a8
+2025-05-24 20:16:47,957 - openevolve.controller - INFO - Iteration 1: Child eccdbe2f-f518-4deb-9723-a9795d880224 from parent 32533cee-89cf-4cb0-9c37-4c12c6d3b1a8 in 2.77s. Metrics: point_count=67.0000, overall_score=67.0000, runtime=0.1730, valid_solution=1.0000 (Δ: point_count=+0.0000, overall_score=+0.0000, runtime=+0.0191, valid_solution=+0.0000)
+2025-05-24 20:16:47,957 - openevolve.controller - INFO - 🌟 New best solution found at iteration 1: eccdbe2f-f518-4deb-9723-a9795d880224
+2025-05-24 20:16:47,957 - openevolve.controller - INFO - Metrics: point_count=67.0000, overall_score=67.0000, runtime=0.1730, valid_solution=1.0000
+2025-05-24 20:16:48,432 - httpx - INFO - HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2025-05-24 20:16:50,398 - openevolve.evaluator - INFO - Evaluated program 6ebe9262-45f7-4255-839f-b1c90d59b6e3 in 0.18s: point_count=65.0000, overall_score=65.0000, runtime=0.1742, valid_solution=1.0000
+2025-05-24 20:16:50,398 - openevolve.controller - INFO - Iteration 2: Child 6ebe9262-45f7-4255-839f-b1c90d59b6e3 from parent eccdbe2f-f518-4deb-9723-a9795d880224 in 2.44s. Metrics: point_count=65.0000, overall_score=65.0000, runtime=0.1742, valid_solution=1.0000 (Δ: point_count=-2.0000, overall_score=-2.0000, runtime=+0.0012, valid_solution=+0.0000)
+2025-05-24 20:16:50,851 - httpx - INFO - HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"

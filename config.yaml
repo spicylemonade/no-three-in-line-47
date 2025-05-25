@@ -1,0 +1,35 @@
+# Configuration for No-Three-in-Line problem (N=47)
+max_iterations: 500 # As specified, but will test with fewer first
+checkpoint_interval: 10 # Reasonable for long runs
+log_level: "INFO"
+
+# LLM configuration (using the same as Golomb ruler for consistency)
+llm:
+  primary_model: "google/gemini-2.0-flash-001"
+  primary_model_weight: 0.7
+  secondary_model: "openai/o4-mini-high"
+  secondary_model_weight: 0.3
+  api_base: "https://openrouter.ai/api/v1"
+  temperature: 0.9
+  max_tokens: 2000
+  timeout: 120
+
+# Prompt for this problem
+prompt:
+  system_message: "You are an expert programmer solving the no-three-in-line problem. Modify the run_search() function to find a larger set of points on a 47x47 grid such that no three points are collinear. The function should return a list of (x,y) tuples."
+  num_top_programs: 3 # Default
+
+# Database settings from user spec
+database:
+  population_size: 200
+  archive_size: 200 # Mirroring population size, often a good heuristic
+  # num_islands: 4 # This will be handled by multiple runs or a different runner if supported directly, for now, focus on single population.
+
+# Evaluator settings
+evaluator:
+  timeout: 20 # Increased from 5s in user example due to N=47 complexity
+  parallel_evaluations: 1 # Start with 1, can increase if system supports and hardware allows
+
+# Evolution settings
+diff_based_evolution: true
+target_score: "overall_score" # As specified 
