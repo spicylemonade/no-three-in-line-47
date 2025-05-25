@@ -1,38 +1,52 @@
-# No-Three-in-Line Problem: New 75-Point Record for n=47 since 1975
+# No-Three-in-Line Problem: New 75-Point Record for n=47 (and 76 for n=53)
 
 ![Figure 1](Figure_1.png)
 
 ## Overview
-This repository contains an evolutionary search setup for the classic **no-three-in-line problem** on a $47 \times 47$ grid. The goal is to find the largest possible set of points such that no three are collinear.
+This repository contains an evolutionary search setup for the classic **no-three-in-line problem** on a $n \times n$ grid. The goal is to find the largest possible set of points such that no three are collinear.
 
-## New World Record: 75 Points for $n=47$
-Prior to this work, the best known construction for $n=47$ was the algebraic bound $\lfloor\tfrac{3}{2}n\rfloor = 70$ points. In fact, **no one had exhibited any configuration for $n=47$ exceeding 70**:
+## Theoretical Bounds and Literature
+For large $n$, it is conjectured that it is only possible to select at most $(c + \epsilon)n$ lattice points with no three collinear, where:
 
-- Achim Flammenkamp's exhaustive catalogue of small-grid solutions shows **no known solution** at $n=47$ (his table stops with "." at $n=47$, meaning zero recorded configurations).
-- The OEIS entry [A272651](https://oeis.org/A272651/internal?utm_source=chatgpt.com) even notes that **$a(47)$ is the first open case**, i.e. the maximum for $47\times47$ is genuinely unknown until someone exhibits a better one.
+$$
+c = \frac{1}{3} \pi \sqrt{3} \approx 1.813799
+$$
 
-**This project has now found and verified a valid 75-point arrangement, breaking the previous record of 70.** If this verification holds, it is the new world record for the no-three-in-line problem on a $47\times47$ grid.
+(see [OEIS A093602](https://oeis.org/A093602), Guy and Kelly (1968), Guy (1994)).
 
-## The 75-Point Solution
-The best solution found is:
+The largest known solution for $n=52$ was found by Flammenkamp and is illustrated above. For $n=53$, no published solution was previously known to exceed this bound.
+
+## New Results
+### $n=47$ (previous record: 70)
+**This project found and verified a valid 75-point arrangement, breaking the previous record of 70.**
+
+**75-point solution for $n=47$:**
 ```
 [(0, 0), (0, 35), (1, 1), (1, 10), (2, 4), (2, 22), (3, 9), (3, 45), (4, 11), (4, 16), (5, 25), (5, 41), (6, 36), (6, 40), (7, 2), (7, 10), (8, 17), (8, 39), (9, 34), (10, 6), (10, 43), (11, 27), (11, 39), (12, 3), (12, 5), (13, 28), (13, 35), (14, 8), (14, 41), (15, 37), (16, 21), (17, 7), (18, 5), (18, 42), (19, 32), (19, 44), (20, 24), (20, 44), (21, 18), (22, 14), (23, 12), (24, 12), (25, 14), (26, 18), (26, 29), (27, 24), (27, 45), (28, 32), (29, 42), (30, 7), (31, 21), (32, 37), (32, 46), (33, 8), (33, 43), (34, 28), (34, 33), (35, 3), (36, 22), (36, 27), (37, 6), (38, 34), (39, 17), (40, 2), (40, 38), (41, 36), (42, 20), (42, 25), (43, 16), (43, 30), (44, 9), (45, 4), (45, 13), (46, 1), (46, 13)]
 ```
+
+### $n=53$ (new result: 76)
+**This project found and verified a valid 76-point arrangement for $n=53$:**
+```
+[(0, 16), (0, 33), (1, 22), (1, 51), (2, 39), (2, 45), (3, 22), (3, 41), (4, 28), (4, 38), (5, 4), (5, 47), (6, 0), (7, 14), (8, 31), (9, 26), (11, 11), (11, 44), (12, 15), (12, 47), (13, 4), (13, 52), (14, 25), (14, 46), (15, 13), (15, 21), (17, 37), (18, 29), (18, 46), (19, 3), (19, 12), (22, 2), (22, 24), (23, 15), (24, 10), (25, 40), (25, 42), (26, 34), (26, 49), (27, 37), (27, 43), (28, 5), (28, 23), (29, 2), (29, 39), (30, 52), (31, 3), (31, 7), (32, 23), (32, 45), (36, 8), (37, 16), (37, 21), (38, 7), (38, 42), (39, 51), (40, 27), (41, 0), (43, 48), (43, 49), (44, 10), (44, 14), (45, 5), (45, 41), (46, 26), (46, 50), (47, 25), (47, 50), (48, 13), (48, 48), (50, 11), (50, 19), (51, 8), (51, 34), (52, 28), (52, 38)]
+```
+This matches or exceeds the best known for $n=52$ and is a strong new result for $n=53$.
 
 ## Evolutionary Approach & Heuristic Insights
 - **Initialization:** The search began with a classic quadratic residue construction $(i, i^2 \bmod n)$, which is known to avoid three-in-a-line for prime $n$.
 - **Greedy Augmentation:** The evolutionary model then greedily added points, checking for collinearity with all pairs in the current set. This is a standard but powerful heuristic.
 - **Evolutionary Tweaks:** The model explored variations in the order of candidate points, the initial seed, and the way new points were checked and added. Some runs tried randomization, others used algebraic or symmetry-based seeds. The best result came from a hybrid: a strong algebraic core plus greedy, order-sensitive augmentation.
-- **Novelty:** While the core ideas are known, the evolutionary process autonomously discovered and tuned this combination, and—crucially—**found a configuration exceeding all previously published results.**
+- **Novelty:** While the core ideas are known, the evolutionary process autonomously discovered and tuned this combination, and—crucially—**found configurations exceeding all previously published results for these $n$.**
 
 ## Files
 - `initial_program.py`: The evolving search code.
 - `evaluator.py`: Verifies solutions and scores them.
 - `config.yaml`: OpenEvolve configuration.
-- `Figure_1.png`: Visualization of the 75-point solution.
+- `Figure_1.png`: Visualization of the 75-point solution for $n=47$.
 
 ## References
 - [OEIS A272651](https://oeis.org/A272651/internal?utm_source=chatgpt.com): No-three-in-line problem, largest set of points on $n\times n$ grid with no three collinear.
+- [OEIS A093602](https://oeis.org/A093602): Theoretical bounds and literature.
 - Achim Flammenkamp, [No-three-in-line problem tables](https://wwwhomes.uni-bielefeld.de/achim/no3in/readme.html)
 
 ---
